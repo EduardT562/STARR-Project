@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+figure,
+picture {
+  margin: 0;
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

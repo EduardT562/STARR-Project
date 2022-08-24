@@ -1,0 +1,181 @@
+.destination-body {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dest {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 4.72px;
+  line-height: 34px;
+  width: 30%;
+  color: #ffff;
+  margin-left: 165.5px;
+  margin-top: 76px;
+
+  &--number {
+    font-family: "Barlow Condensed";
+    color: #ffff;
+    padding-left: 28px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  &__main-planet {
+    height: 445px;
+    width: 445px;
+    margin-left: 220px;
+    margin-top: 97px;
+  }
+}
+
+.dest__container {
+  position: relative;
+  float: right;
+  display: border-box;
+  height: 445px;
+  width: 472px;
+  margin-right: 163px;
+  margin-left: 157px;
+  margin-top: 55px;
+
+  .planet-name {
+    position: absolute;
+    margin-top: 71px;
+    height: 115px;
+    width: 333px;
+    font-family: "Bellefair";
+    font-size: 100px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+
+  &--line {
+    position: absolute;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 100%;
+    margin-top: 382px;
+  }
+
+  .info-box {
+    position: absolute;
+    margin-top: 411px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 79px;
+
+    &__distance {
+      margin-left: 0.5px;
+      width: 165px;
+      height: 61px;
+
+      .avg-dist {
+        font-family: "Barlow Condensed";
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 2.36px;
+        color: #d0d6f9;
+        margin-bottom: 12px;
+      }
+
+      .distance {
+        font-family: "Bellefair";
+        font-size: 28px;
+        font-weight: normal;
+        color: #ffffff;
+      }
+    }
+
+    &__time {
+      font-family: "Barlow Condensed";
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: 2.36px;
+      color: #d0d6f9;
+      margin-bottom: 12px;
+
+      .est-time {
+        font-family: "Barlow Condensed";
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 2.36px;
+        color: #d0d6f9;
+        margin-bottom: 12px;
+      }
+
+      .time {
+        font-family: "Bellefair";
+        font-size: 28px;
+        font-weight: normal;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .planet-desc {
+    position: absolute;
+    margin-top: 200px;
+    width: 444px;
+    height: 128px;
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #d0d6f9;
+  }
+}
+
+.planet-menu {
+  display: border-box;
+  position: absolute;
+  width: 285.34px;
+  height: 34px;
+  justify-content: space-between;
+  margin-top: 0%;
+
+  &__planets {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+
+    &--list {
+      position: relative;
+      gap: 36px;
+      cursor: pointer;
+      height: 25px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        bottom: 0;
+        left: 0;
+        transition: all 0.5s ease-out;
+        z-index: 1;
+      }
+
+      &:hover:after {
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: all 0.5s ease-out;
+      }
+
+      & > a {
+        text-decoration: none;
+        color: #ffffff;
+        letter-spacing: 2.7px;
+        color: #ffff;
+        font-family: "Barlow Condensed";
+      }
+    }
+  }
+}

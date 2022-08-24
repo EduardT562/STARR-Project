@@ -1,0 +1,128 @@
+.tech-body {
+  background-image: url(../assets/technology/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tech__title {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 4.72px;
+  height: 34px;
+  width: 350px;
+  color: #ffff;
+  text-transform: uppercase;
+  margin-top: 76px;
+  margin-left: 166.5px;
+
+  span {
+    margin-right: 9px;
+    font-weight: bold;
+    letter-spacing: 2.7px;
+  }
+  .tech--number {
+    font-family: "Barlow Condensed";
+    color: #ffff;
+    padding-left: 28px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+
+.nav-tech__container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-tech {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-left: 80px;
+}
+
+.nav-tech__ul {
+  list-style: none;
+}
+
+.nav-tech__list {
+  position: relative;
+  padding-top: 32px;
+}
+
+.nav-tech__list--link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-tech__bigdot {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  border: solid 1px #ffff;
+  background-color: transparent;
+  font-family: "Bellefair";
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  cursor: pointer;
+  justify-content: center;
+
+  &:hover {
+    background-color: #ffff;
+    color: black;
+  }
+}
+
+.bigdot-number {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tech-desc {
+  justify-content: center;
+  margin-right: 400px;
+  margin-left: 80px;
+
+  section {
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2.7px;
+    color: #d0d6f9;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+  }
+
+  &__device {
+    font-family: "Bellefair";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    height: 64px;
+    width: 470px;
+
+    &--desc {
+      height: 192px;
+      width: 444px;
+      font-family: "Barlow";
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 400;
+      font-style: normal;
+      color: #d0d6f9;
+    }
+  }
+}

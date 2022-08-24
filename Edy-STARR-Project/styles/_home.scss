@@ -1,0 +1,81 @@
+.homepage-body {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mobile;
+}
+
+.intro {
+  display: flex;
+  height: 382px;
+  width: 450px;
+  justify-content: center;
+  position: relative;
+  margin-top: 300px;
+  margin-left: 165px;
+
+  &__title1 {
+    display: block;
+    font-family: "Barlow Condensed";
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 4.72px;
+    line-height: 34px;
+    color: #c4c4c4;
+    position: absolute;
+    left: 0.5px;
+    right: 70.5px;
+    width: 400px;
+  }
+
+  &__title2 {
+    display: block;
+    font-family: "Bellefair";
+    font-size: 150px;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+    top: 58px;
+    right: 5px;
+    bottom: 152px;
+  }
+
+  &__desc {
+    font-family: "Barlow";
+    font-size: 18px;
+    font-weight: 400;
+    color: #d0d6f9;
+    position: absolute;
+    top: 254px;
+    left: 0.5px;
+    right: 5.5px;
+    line-height: 32px;
+  }
+}
+
+.explore-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  float: right;
+  left: 1001px;
+  right: 165px;
+  top: 495px;
+  bottom: 131px;
+  width: 274px;
+  height: 274px;
+  border-radius: 100%;
+  font-family: "Bellefair";
+  color: black;
+  background-color: #ffffff;
+  font-size: 32px;
+  line-height: 36.67px;
+  letter-spacing: 2px;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 0 0 88px #97979725;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+}
